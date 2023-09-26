@@ -1,0 +1,17 @@
+<!-- app/templates/my_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form</title>
+  </head>
+  <body>
+    <form method="post">
+      {% csrf_token %}
+      <label for="my_textbox">Enter something:</label><br />
+      <input type="text" id="my_textbox" name="my_textbox" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
